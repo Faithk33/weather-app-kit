@@ -13,13 +13,32 @@
     <link rel="stylesheet" href="src/index.css" />
   </head>
   <body>
+    <form></form>
     <p class="current-time" id="current-time">20:00</p>
+    <p class="current-day" id="current-day">Tuesday</p>
     <h3>Johannesburg</h3>
     <br />
-    <div class="weather-today" id="weather-today"></div>
-    <div class="weather-traits" id="weather-traits"></div>
+    <div class="weather-today" id="weather-today">
+        <p class="forecast-icon"></p><span>12</span>
+    </div>
+    <div class="weather-traits" id="weather-traits">
+        <ul class="trait" id="trait">
+            <li class="trait-1">SSW
+                <div class="trait-info">20mph</div>
+            </li>
+            <li class="trait-2">Rain
+                <div class="trait-info">0%</div>
+            </li>
+            <li class="trait-3">Sunrise
+                <div class="trait-info">6am</div>
+            </li>
+            <li class="trait-4">Sunset
+                <div class="trait-info">9pm</div>
+            </li>
+        </ul>
+    </div>
     <hr />
-    <div class="weekly-forecast" id="weekly-forecast"></div>
+    
     <footer>
       Coded by
       <a href="https://github.com/Faithk33" target="blank">Lethabo Kekana</a>
@@ -27,7 +46,7 @@
       <a href="https://github.com/Faithk33/weather-app-kit" target="blank"
         >Github</a
       >
-      and
+      and hosted by
       <a href="https://vanni-weatherapp.netlify.app/" target="blank">Netlify</a>
     </footer>
     <script src="src/index.js" async defer></script>
