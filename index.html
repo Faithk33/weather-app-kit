@@ -21,9 +21,10 @@
     <div class="body">
       <form id=search-form>
         <input
-          type="text"
+          type="search"
           placeholder="Enter a city"
-          id="search-input"
+          required
+          id="search-input-info"
           class="search-input" />
         <input
           type="submit"
@@ -31,7 +32,7 @@
           class="search-button"
           id="search-button" />
       </form>
-      <h3 class="current-city">Johannesburg</h3>
+      <h3 class="current-city" id="city">Johannesburg</h3>
       <p class="current-date" id="current-date">Monday, 20:00</p>
       <div class="weather-today" id="weather-today">
         <i class="fa-solid fa-cloud-sun" id="main-icon"></i>
@@ -64,6 +65,6 @@
         >
       </footer>
     </div>
-    <script src="src/index.js" async defer></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
