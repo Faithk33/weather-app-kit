@@ -7,45 +7,57 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="src/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/solid.min.js"
+      integrity="sha512-+fI924YJzeYFv7M0R29zJvRThPinSUOAmo5rpR9v6G4eWIbva/prHdZGSPN440vuf781/sOd/Fr+5ey0pqdW9w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="Enter a city" id="search" />
-      <input type="submit" value="Search" />
-    </form>
-    <p class="current-time" id="current-time">20:00</p>
-    <p class="current-day" id="current-day">Tuesday</p>
-    <h3>Johannesburg</h3>
-    <div class="weather-today" id="weather-today">
-      <i class="fa-solid fa-cloud-sun"></i>
-      <span>12</span>
+    <div class="body">
+      <form>
+        <input
+          type="text"
+          placeholder="Enter a city"
+          id="search"
+          class="search-input" />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+      <p class="current-time" id="current-time">20:00</p>
+      <p class="current-day" id="current-day">Tuesday</p>
+      <h3>Johannesburg</h3>
+      <div class="weather-today" id="weather-today">
+        <i class="fa-solid fa-cloud-sun"></i>
+        <span class="current-temp">12</span>
+      </div>
+      <div class="weather-traits" id="weather-traits">
+        <ul class="trait" id="trait">
+          <li class="trait-1">
+            <i class="fa-solid fa-wind"></i>
+            SSW
+            <div class="trait-info">20mph</div>
+          </li>
+          <li class="trait-2">
+            <i class="fa-solid fa-cloud-rain"></i>
+            Rain
+            <div class="trait-info">0%</div>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        Coded by
+        <a href="https://github.com/Faithk33" target="blank">Lethabo Kekana</a>
+        and is hosted on
+        <a href="https://github.com/Faithk33/weather-app-kit" target="blank"
+          >Github</a
+        >
+        and hosted by
+        <a href="https://vanni-weatherapp.netlify.app/" target="blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
-    <div class="weather-traits" id="weather-traits">
-      <ul class="trait" id="trait">
-        <li class="trait-1">
-          <i class="fa-solid fa-wind"></i>
-          SSW
-          <div class="trait-info">20mph</div>
-        </li>
-        <li class="trait-2">
-          <i class="fa-solid fa-cloud-rain"></i>
-          Rain
-          <div class="trait-info">0%</div>
-        </li>
-      </ul>
-    </div>
-    <hr />
-
-    <footer>
-      Coded by
-      <a href="https://github.com/Faithk33" target="blank">Lethabo Kekana</a>
-      and is hosted on
-      <a href="https://github.com/Faithk33/weather-app-kit" target="blank"
-        >Github</a
-      >
-      and hosted by
-      <a href="https://vanni-weatherapp.netlify.app/" target="blank">Netlify</a>
-    </footer>
     <script src="src/index.js" async defer></script>
   </body>
 </html>
