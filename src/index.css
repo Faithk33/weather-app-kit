@@ -1,19 +1,16 @@
 body {
   background-color: #f5eee6;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Lora", serif;
 }
 .body {
   background-color: #f3d7ca;
   margin: 135px auto;
   padding: 40px;
   box-shadow: 0 30px 50 px rgba(65, 50, 10, 0.23);
-  border: radius 30px;
+  border-radius: 10px;
   max-width: 600px;
 }
-form {
-  margin: auto;
-}
-search-input {
+.search-input {
   border: none;
   color: palevioletred;
   font-size: 16px;
@@ -21,28 +18,48 @@ search-input {
   width: 75%;
   border-radius: 5px;
 }
-search-button {
+.search-button {
+  background-color: palevioletred;
+  margin-left: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  line-height: 1;
+  padding: 20px;
   margin-left: 5px;
 }
-current-time {
-  margin: 0 auto;
-}
-current-day {
+current-date {
   text-align: center;
 }
 h3 {
-  text-align: right;
+  text-align: center;
+  font-size: 30px;
 }
-current-temp {
+span {
+  font-size: 48px;
+}
+#icon-2 {
+  font-size: 16px;
+}
+.trait-info {
+  color: gray;
+  font-size: 16px;
+}
+#main-icon {
   position: relative;
-  font-size: 80px;
-  font-weight: bold;
+  top: -8px;
+  font-size: 40px;
+  margin-right: 10px;
 }
 footer {
   text-align: center;
   padding-top: 15px;
   border-top: 1px solid palevioletred;
+  color: gray;
 }
 a {
   color: palevioletred;
+}
+ul {
+  list-style: none;
 }
